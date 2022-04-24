@@ -13,6 +13,9 @@
 		B3B07A0C28160FC4003E4EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B07A0A28160FC4003E4EBF /* Main.storyboard */; };
 		B3B07A0E28160FC6003E4EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B07A0D28160FC6003E4EBF /* Assets.xcassets */; };
 		B3B07A1128160FC6003E4EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B07A0F28160FC6003E4EBF /* LaunchScreen.storyboard */; };
+		B3B07A1A2816116A003E4EBF /* ImageCollectionViewCell..swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B07A192816116A003E4EBF /* ImageCollectionViewCell..swift */; };
+		B3B07A1D281611C1003E4EBF /* UnsplashPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = B3B07A1C281611C1003E4EBF /* UnsplashPhotoPicker */; };
+		B3B07A20281611DC003E4EBF /* Elements in Frameworks */ = {isa = PBXBuildFile; productRef = B3B07A1F281611DC003E4EBF /* Elements */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,7 @@
 		B3B07A0D28160FC6003E4EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3B07A1028160FC6003E4EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3B07A1228160FC6003E4EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3B07A192816116A003E4EBF /* ImageCollectionViewCell..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell..swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3B07A1D281611C1003E4EBF /* UnsplashPhotoPicker in Frameworks */,
+				B3B07A20281611DC003E4EBF /* Elements in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +62,7 @@
 		B3B07A0328160FC4003E4EBF /* ImageFinder */ = {
 			isa = PBXGroup;
 			children = (
+				B3B07A18281610D9003E4EBF /* View */,
 				B3B07A0428160FC4003E4EBF /* AppDelegate.swift */,
 				B3B07A0628160FC4003E4EBF /* SceneDelegate.swift */,
 				B3B07A0828160FC4003E4EBF /* ViewController.swift */,
@@ -65,6 +72,14 @@
 				B3B07A1228160FC6003E4EBF /* Info.plist */,
 			);
 			path = ImageFinder;
+			sourceTree = "<group>";
+		};
+		B3B07A18281610D9003E4EBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3B07A192816116A003E4EBF /* ImageCollectionViewCell..swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +98,10 @@
 			dependencies = (
 			);
 			name = ImageFinder;
+			packageProductDependencies = (
+				B3B07A1C281611C1003E4EBF /* UnsplashPhotoPicker */,
+				B3B07A1F281611DC003E4EBF /* Elements */,
+			);
 			productName = ImageFinder;
 			productReference = B3B07A0128160FC4003E4EBF /* ImageFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +130,10 @@
 				Base,
 			);
 			mainGroup = B3B079F828160FC4003E4EBF;
+			packageReferences = (
+				B3B07A1B281611C1003E4EBF /* XCRemoteSwiftPackageReference "unsplash-photopicker-ios" */,
+				B3B07A1E281611DC003E4EBF /* XCRemoteSwiftPackageReference "ElementKit" */,
+			);
 			productRefGroup = B3B07A0228160FC4003E4EBF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +164,7 @@
 				B3B07A0928160FC4003E4EBF /* ViewController.swift in Sources */,
 				B3B07A0528160FC4003E4EBF /* AppDelegate.swift in Sources */,
 				B3B07A0728160FC4003E4EBF /* SceneDelegate.swift in Sources */,
+				B3B07A1A2816116A003E4EBF /* ImageCollectionViewCell..swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +380,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3B07A1B281611C1003E4EBF /* XCRemoteSwiftPackageReference "unsplash-photopicker-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/unsplash/unsplash-photopicker-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B3B07A1E281611DC003E4EBF /* XCRemoteSwiftPackageReference "ElementKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/practice20200/ElementKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3B07A1C281611C1003E4EBF /* UnsplashPhotoPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3B07A1B281611C1003E4EBF /* XCRemoteSwiftPackageReference "unsplash-photopicker-ios" */;
+			productName = UnsplashPhotoPicker;
+		};
+		B3B07A1F281611DC003E4EBF /* Elements */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3B07A1E281611DC003E4EBF /* XCRemoteSwiftPackageReference "ElementKit" */;
+			productName = Elements;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3B079F928160FC4003E4EBF /* Project object */;
 }

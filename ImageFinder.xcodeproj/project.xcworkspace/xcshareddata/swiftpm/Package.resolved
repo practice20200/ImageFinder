@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "elementkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/practice20200/ElementKit",
+      "state" : {
+        "revision" : "bff28f2936db5b9471a312daa5cba06159bada07",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "unsplash-photopicker-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/unsplash/unsplash-photopicker-ios",
+      "state" : {
+        "revision" : "7306a92362855ec41149e5e214c63089586653f4",
+        "version" : "1.3.0"
+      }
+    }
+  ],
+  "version" : 2
+}
