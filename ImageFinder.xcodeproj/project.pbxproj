@@ -68,6 +68,7 @@
 		B3B07A0328160FC4003E4EBF /* ImageFinder */ = {
 			isa = PBXGroup;
 			children = (
+				B3B07A28281613BC003E4EBF /* Controller */,
 				B3B07A2128161316003E4EBF /* Model */,
 				B3B07A18281610D9003E4EBF /* View */,
 				B3B07A0428160FC4003E4EBF /* AppDelegate.swift */,
@@ -97,6 +98,13 @@
 				B3B07A262816134A003E4EBF /* Result.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B3B07A28281613BC003E4EBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
