@@ -83,7 +83,7 @@ class ViewController : UIViewController,UICollectionViewDelegateFlowLayout{
     
     //======Functions========
     func fetchPhotos(_ query: String){
-        //Please enter  "https://api.unsplash.com/photos/?client_id= + (your accesskey) "
+        //Please enter "https://api.unsplash.com/search/photos?page=1&per_page=50&query=\(query)&client_id= + (your clientID)"
         let urlString = ""
 
         guard let url = URL(string: urlString) else{ return }
@@ -104,7 +104,7 @@ class ViewController : UIViewController,UICollectionViewDelegateFlowLayout{
                 }
                 print(jsonResult.results.count)
             }catch{
-                print(error)
+                print(error.localizedDescription)
             }
         }
         task.resume()

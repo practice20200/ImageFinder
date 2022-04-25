@@ -19,6 +19,7 @@
 		B3B07A2328161329003E4EBF /* URLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B07A2228161329003E4EBF /* URLS.swift */; };
 		B3B07A2528161339003E4EBF /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B07A2428161339003E4EBF /* APIResponse.swift */; };
 		B3B07A272816134A003E4EBF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B07A262816134A003E4EBF /* Result.swift */; };
+		B3B07A2B28161AD4003E4EBF /* Elements in Frameworks */ = {isa = PBXBuildFile; productRef = B3B07A2A28161AD4003E4EBF /* Elements */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3B07A2B28161AD4003E4EBF /* Elements in Frameworks */,
 				B3B07A1D281611C1003E4EBF /* UnsplashPhotoPicker in Frameworks */,
 				B3B07A20281611DC003E4EBF /* Elements in Frameworks */,
 			);
@@ -73,7 +75,6 @@
 				B3B07A18281610D9003E4EBF /* View */,
 				B3B07A0428160FC4003E4EBF /* AppDelegate.swift */,
 				B3B07A0628160FC4003E4EBF /* SceneDelegate.swift */,
-				B3B07A0828160FC4003E4EBF /* ViewController.swift */,
 				B3B07A0A28160FC4003E4EBF /* Main.storyboard */,
 				B3B07A0D28160FC6003E4EBF /* Assets.xcassets */,
 				B3B07A0F28160FC6003E4EBF /* LaunchScreen.storyboard */,
@@ -103,6 +104,7 @@
 		B3B07A28281613BC003E4EBF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B3B07A0828160FC4003E4EBF /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,6 +128,7 @@
 			packageProductDependencies = (
 				B3B07A1C281611C1003E4EBF /* UnsplashPhotoPicker */,
 				B3B07A1F281611DC003E4EBF /* Elements */,
+				B3B07A2A28161AD4003E4EBF /* Elements */,
 			);
 			productName = ImageFinder;
 			productReference = B3B07A0128160FC4003E4EBF /* ImageFinder.app */;
@@ -435,6 +438,11 @@
 			productName = UnsplashPhotoPicker;
 		};
 		B3B07A1F281611DC003E4EBF /* Elements */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3B07A1E281611DC003E4EBF /* XCRemoteSwiftPackageReference "ElementKit" */;
+			productName = Elements;
+		};
+		B3B07A2A28161AD4003E4EBF /* Elements */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B3B07A1E281611DC003E4EBF /* XCRemoteSwiftPackageReference "ElementKit" */;
 			productName = Elements;
